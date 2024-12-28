@@ -1,9 +1,14 @@
 import 'package:device_preview/device_preview.dart';
+import 'package:first_week_challenge/helper/init_dep.dart';
+// import 'package:first_week_challenge/helper/init_controllers.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'my_home_page.dart';
 
 void main() {
+  // WidgetsFlutterBinding.ensureInitialized();
+  // await init();
   runApp(DevicePreview(
     enabled: true,
     builder: (context) => MyApp(),
@@ -16,7 +21,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
+      initialBinding: InitDep(),
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
