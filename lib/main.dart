@@ -1,10 +1,11 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:first_week_challenge/helper/init_dep.dart';
+import 'package:first_week_challenge/state.page.dart';
 // import 'package:first_week_challenge/helper/init_controllers.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'my_home_page.dart';
+// import 'my_home_page.dart';
 
 void main() {
   // WidgetsFlutterBinding.ensureInitialized();
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       initialBinding: InitDep(),
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -43,7 +45,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: MyHomePage(),
+      home: StatePage(),
     );
   }
 }
