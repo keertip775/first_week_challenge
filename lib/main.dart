@@ -1,6 +1,9 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:first_week_challenge/helper/init_dep.dart';
+// import 'package:first_week_challenge/my_home_page.dart';
 import 'package:first_week_challenge/state.page.dart';
+// import 'package:first_week_challenge/state.page.dart';
+// import 'package:first_week_challenge/try1.dart';
 // import 'package:first_week_challenge/helper/init_controllers.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
